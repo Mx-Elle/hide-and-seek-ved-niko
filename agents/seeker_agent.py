@@ -1,3 +1,5 @@
+# Niko is the seeker
+
 from agent_base import Agent
 from world_state import WorldState
 from Mesh.nav_mesh import NavMesh
