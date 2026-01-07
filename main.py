@@ -95,7 +95,7 @@ def main():
             if d <= SEEKER_SPEED and collider.contains(line):
                 seeker_position = seeker_next_position
         with seeker._lock:
-            can_see = True  # mesh.has_line_of_sight(seeker_position, hider_position)
+            can_see = mesh.has_line_of_sight(seeker_position, hider_position)
             seeker._state.hider_position = hider_position if can_see else None
             seeker._state.seeker_position = seeker_position
             seeker._state.frame = frame
